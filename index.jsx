@@ -1,5 +1,13 @@
+const Page = () => {
+    return (
+        <div>
+        <Main />
+        <Footer />
+        </div>
+    )
+}
 
-const Nav = () => {
+const Main = () => {
     return (
         <div className='nav'>
             <img width={'40px'} src="./react-logo.png" alt="logo react" />
@@ -15,6 +23,14 @@ const Nav = () => {
     );
 };
 
+function Footer() {
+    return (
+        <footer>
+            <small>© 2022 Adda development. All rights reserved.</small>
+        </footer>
+    )
+}
 
 
-ReactDOM.render(<Nav /> , document.getElementById('root'))
+
+ReactDOM.render(<Page /> , document.getElementById('root'))
