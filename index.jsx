@@ -1,16 +1,24 @@
 const Page = () => {
     return (
-        <div>
+    <div>
+        <Header />
         <Main />
         <Footer />
-        </div>
+    </div>
+    )
+}
+
+function Header() {
+    return (
+        <nav className="nav">
+            <img width={'40px'} src="./react-logo.png" alt="logo react" />
+        </nav>
     )
 }
 
 const Main = () => {
     return (
-        <div className='nav'>
-            <img width={'40px'} src="./react-logo.png" alt="logo react" />
+        <div className='main'>
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -25,7 +33,7 @@ const Main = () => {
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <small>© 2022 Adda development. All rights reserved.</small>
         </footer>
     )
