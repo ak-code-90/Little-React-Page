@@ -11,7 +11,7 @@ const Page = () => {
 function Header() {
     return (
         <nav className="nav">
-            <img width={'40px'} height="" src="./react-logo.png" alt="logo react" />
+            <img className="nav__logo" height="" src="./react-logo.png" alt="logo react" />
             <ul className="nav__items" >
                 <li>Pricing</li>
                 <li>About</li>
