@@ -1,4 +1,8 @@
-const Page = () => {
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import Header from "./Header";
+
+const App = () => {
     return (
     <div>
         <Header />
@@ -13,7 +17,7 @@ function Header() {
         <nav className="nav">
             <img className="nav__logo" height="" src="./react-logo.png" alt="logo react" />
             <ul className="nav__items" >
-                <li>Pricing</li>
+                <li>Learn</li>
                 <li>About</li>
                 <li>Contact</li>
             </ul>
@@ -39,11 +43,11 @@ const Main = () => {
 function Footer() {
     return (
         <footer className="footer">
-            <small>© 2022 Adda development. All rights reserved.</small>
+            <small>© 2022 Made with ❤️ by Kevin Adda.</small>
         </footer>
     )
 }
 
 
 
-ReactDOM.render(<Page /> , document.getElementById('root'))
+ReactDOM.render(<App /> , document.getElementById('root'))
