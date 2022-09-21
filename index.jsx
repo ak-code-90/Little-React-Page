@@ -1,6 +1,3 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import Header from "./Header";
 
 const App = () => {
     return (
@@ -17,9 +14,9 @@ function Header() {
         <nav className="nav">
             <img className="nav__logo" height="" src="./react-logo.png" alt="logo react" />
             <ul className="nav__items" >
-                <li>Learn</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#">Learn</a> </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     )
@@ -35,6 +32,8 @@ const Main = () => {
                 <li>Has well over 100k stars on Github</li>
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of entreprise apps, including mobile apps</li>
+                <li>Is composable, it means that the app can be decomposate in multiples elements</li>
+                <li>Is declarative, it means that we can ask React to do stuff without having to describe every step in detail</li>
             </ul>
         </div>
     );

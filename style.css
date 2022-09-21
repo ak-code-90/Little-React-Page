@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: lato, serif;
     margin: 0;
+    text-decoration: none;
 }
 
 body {
@@ -24,11 +25,12 @@ body {
 .nav__items {
     list-style: none;
     display: flex;
-    color: #fff;
+    
 }
 
-.nav__items>li {
+.nav__items > li > a {
     padding: 10px;
+    color: #fff;
 }
 
 .main {
