@@ -32,7 +32,7 @@ const Main = () => {
                 <li>Has well over 100k stars on Github</li>
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of entreprise apps, including mobile apps</li>
-                <li>Is composable, it means that the app can be decomposate in multiples elements</li>
+                <li>Is composable, it means that the app can be decomposate in multiples elements, it allows maintainability and flexibility</li>
                 <li>Is declarative, it means that we can ask React to do stuff without having to describe every step in detail</li>
             </ul>
         </div>

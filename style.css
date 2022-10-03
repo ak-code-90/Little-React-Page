@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: mediumslateblue;
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.502);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 40%);
 }
 
 .nav__logo {
@@ -41,9 +41,27 @@ body {
     align-items: center;
 }
 
-.main>h1 {
+.main > h1 {
     margin: 20px;
     font-size: 24px;
+}
+
+.main>ul {
+    list-style: none;
+}
+
+/*change color of bullet points in a list*/
+.main > ul > li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: mediumslateblue; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.main > ul > li {
+    margin-bottom: 10px;
 }
 
 .footer {
