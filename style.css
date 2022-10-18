@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #282D35;
 }
 
 .nav {
@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: mediumslateblue;
+    background-color: #21222A;
     box-shadow: 0 1px 0 rgb(0 0 0 / 40%);
 }
 
@@ -37,23 +37,29 @@ body {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 30px;
+    min-height: 100vh;
 }
 
 .main > h1 {
-    margin: 20px;
+    margin: 19px;
     font-size: 24px;
+    color: #fff;
 }
 
 .main>ul {
     list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+    max-width: 550px;
 }
 
 /*change color of bullet points in a list*/
 .main > ul > li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: mediumslateblue; /* Change the color */
+    color: #61DAFB; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
@@ -69,10 +75,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: mediumslateblue;
+    background-color: #21222A;
     color: #fff;
     position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 18px;
+}
+
+.main__logo {
+    display: none;
+}
+
+@media (min-width:655px) {
+    .main__logo {
+        display: initial;
+        position: absolute;
+        z-index: -1;
+        bottom: 38%;
+        right: 0;
+        height: 275px;
+    }
 }

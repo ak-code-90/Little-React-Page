@@ -12,7 +12,7 @@ const App = () => {
 function Header() {
     return (
         <nav className="nav">
-            <img className="nav__logo" height="" src="./react-logo.png" alt="logo react" />
+            <img className="nav__logo"  src="./react-logo.png" alt="logo react" />
             <ul className="nav__items" >
                 <li><a href="#">Learn</a> </li>
                 <li><a href="#">About</a></li>
@@ -25,6 +25,7 @@ function Header() {
 const Main = () => {
     return (
         <div className='main'>
+            <img className="main__logo"  src="./react-logo-grey.png" alt="logo react" />
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
